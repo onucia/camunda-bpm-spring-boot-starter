@@ -7,8 +7,6 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.transaction.Transactional;
-
 import org.camunda.bpm.engine.ProcessEngineException;
 import org.camunda.bpm.spring.boot.starter.test.nonpa.TestApplication;
 import org.camunda.bpm.spring.boot.starter.test.nonpa.jpa.domain.TestEntity;
@@ -24,7 +22,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { TestApplication.class }, webEnvironment = WebEnvironment.NONE)
 @ActiveProfiles("nojpa")
-@Transactional
 public class CamundaNoJpaAutoConfigurationIT extends AbstractCamundaAutoConfigurationIT {
 
   @Autowired
