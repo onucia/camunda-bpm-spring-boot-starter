@@ -11,7 +11,6 @@ import org.camunda.bpm.spring.boot.starter.test.nonpa.TestApplication;
 import org.camunda.bpm.spring.boot.starter.test.nonpa.jpa.domain.TestEntity;
 import org.camunda.bpm.spring.boot.starter.test.nonpa.jpa.repository.TestEntityRepository;
 import org.camunda.bpm.spring.boot.starter.test.nonpa.service.TransactionalTestService;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { TestApplication.class }, webEnvironment = WebEnvironment.NONE)
 @Transactional
-@Ignore
 public class CamundaJpaAutoConfigurationIT extends AbstractCamundaAutoConfigurationIT {
 
   @Autowired
